@@ -61,6 +61,7 @@
 % turn of those nasty overfull and underfull hboxes
 \hbadness=10000
 \hfuzz=50pt
+% \raggedbottom
 
 
 
@@ -94,7 +95,8 @@
 
 \vspace{\stretch{1}}
 
-{\fontfamily{verdana}\selectfont
+% see https://en.wikibooks.org/wiki/LaTeX/Fonts
+{\fontfamily{cmr}\selectfont 
 {\scriptsize
 \noindent
 \copyright Your Name, Stockholm 20XX % Name of author, location year
@@ -105,6 +107,7 @@ ISBN XXX-XX-XXXX-XXX-X % Provided by the library
 
 \vspace{5mm}
 \noindent
+Typeset by the author using \LaTeX \newline
 Printed in Sweden by XXXX, Stockholm 2011 %name of printing company
 
 \noindent
@@ -140,7 +143,7 @@ Distributor: Department of XX, Stockholm University %name of department
 
 \renewcommand{\nomname}{Abbreviations} % Change title of page from Nomenclature to Abbreviations
 
-%\nomrefpage % to include page numbers after abbrevations
+% \nomrefpage % to include page numbers after abbrevations
 
 % In the text type "\g" to refer to glossary
 
@@ -155,7 +158,7 @@ Distributor: Department of XX, Stockholm University %name of department
 
 \end{footnotesize}
 
-%\end{multicols}
+% \end{multicols}
 
 %: ----------------------- list of figures/tables ------------------------
 
@@ -184,20 +187,17 @@ Distributor: Department of XX, Stockholm University %name of department
 % But take care that the paths match. You can also change the order of appearance by moving the include commands.
 
 \include{1_introduction/introduction}
-\include{2/chapter2}
-%\include{2/instructions}				
-%\include{3/chapter3}	
-%\include{4/chapter4}	
-%\include{5/chapter5}	
-%\include{6/chapter6}	
-%\include{7/chapter7}	
+% \include{2/chapter2}
+\include{2/instructions}
+\include{3/chapter3}
+\include{4/chapter4}
+\include{5/chapter5}
+\include{6/chapter6}
+\include{7/chapter7}
+\include{8/chapter8}
             
 % Include as many chapters as you need
      
-
-
-
-
 % --------------------------------------------------------------
 %:                  BACK MATTER: appendices, refs,..
 % --------------------------------------------------------------

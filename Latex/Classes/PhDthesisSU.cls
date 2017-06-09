@@ -113,7 +113,7 @@
 %--> http://me.in-berlin.de/~miwie/tex-refs/html/latex-packages.html
 %-->
     \usepackage[ pdftex, plainpages = false, pdfpagelabels, 
-                 pdfpagelayout = useoutlines,
+                 pdfpagelayout = SinglePage, % was useoutlines
                  bookmarks,
                  bookmarksopen = true,
                  bookmarksnumbered = true,
@@ -188,12 +188,12 @@
 \fancypagestyle{plain}
 {
     \fancyhead{}
-    \fancyfoot[LE,RO]{{\fontfamily{verdana}\selectfont\thepage}}
+    \fancyfoot[LE,RO]{{\fontfamily{cmr}\selectfont\thepage}}
 }	% re-define plain page
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot[LE,RO]{{\fontfamily{verdana}\selectfont\thepage}}
+\fancyfoot[LE,RO]{{\fontfamily{cmr}\selectfont\thepage}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 }
